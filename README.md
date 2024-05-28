@@ -1,7 +1,7 @@
 # Network Scanner
 
 ## Introduction
-Welcome to the Port Scanner repository! This project provides a simple tool that 
+Welcome to the Port Scanner repository! This project provides a simple tool that allows you to scan the IP or the hostname for open ports.
 
 ## Features
 - Scan open ports on a single host or a range of hosts.
