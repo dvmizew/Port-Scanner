@@ -5,21 +5,22 @@ import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.util.List;
+import java.util.Objects;
 
 public class NetworkScannerGUI extends JFrame {
     private final JTextArea resultTextArea;
     private final JButton scanButton;
     private final JButton cancelButton;
-    private final JTextField targetField;
     private final JTextField startPortField;
     private final JTextField endPortField;
     private final JProgressBar progressBar;
     private final DefaultListModel<String> scanResults;
+    private final JComboBox<String> targetHistoryDropdown;
     private SwingWorker<Void, String> currentWorker;
 
     public NetworkScannerGUI() {
         setTitle("Network Scanner");
-        setSize(950, 600);
+        setSize(850, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         resultTextArea = new JTextArea(20, 70);
@@ -29,15 +30,17 @@ public class NetworkScannerGUI extends JFrame {
         cancelButton = new JButton("Cancel");
         JButton reportButton = new JButton("Generate Report");
 
-        targetField = new JTextField("192.168.1.1", 20);
         startPortField = new JTextField("1", 5);
         endPortField = new JTextField("65535", 5);
         progressBar = new JProgressBar(0, 100);
         scanResults = new DefaultListModel<>();
 
+        targetHistoryDropdown = new JComboBox<>();
+        targetHistoryDropdown.setEditable(true);
+
         JPanel inputPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
         inputPanel.add(new JLabel("Target (IP/Hostname):"));
-        inputPanel.add(targetField);
+        inputPanel.add(targetHistoryDropdown);
         inputPanel.add(new JLabel("Start Port:"));
         inputPanel.add(startPortField);
         inputPanel.add(new JLabel("End Port:"));
@@ -64,7 +67,14 @@ public class NetworkScannerGUI extends JFrame {
         @Override
         public void actionPerformed(ActionEvent e) {
             System.out.println("Scan button pressed");
-            String target = targetField.getText();
+            String target = Objects.requireNonNull(targetHistoryDropdown.getSelectedItem()).toString(); // Get value from dropdown
+
+            if (!target.isEmpty()) {
+                if (targetHistoryDropdown.getItemCount() == 0 || !target.equals(targetHistoryDropdown.getItemAt(0))) {
+                    targetHistoryDropdown.insertItemAt(target, 0);
+                }
+            }
+
             int startPort;
             int endPort;
             try {
