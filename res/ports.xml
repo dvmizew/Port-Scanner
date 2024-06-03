@@ -95,6 +95,7 @@
     <port number="1723" service="PPTP"/>
     <port number="1812" service="RADIUS"/>
     <port number="1813" service="RADIUS Accounting"/>
+    <port number="1900" service="UPnP"/>
     <port number="2049" service="NFS"/>
     <port number="2052" service="Unknown"/>
     <port number="2053" service="Unknown"/>
@@ -114,8 +115,7 @@
     <port number="3500" service="SaltStack"/>
     <port number="3690" service="Subversion"/>
     <port number="4333" service="MiniDLNA"/>
-    <port number="4369" service="Erl
-ang Port Mapper"/>
+    <port number="4369" service="Erlang Port Mapper"/>
     <port number="4444" service="I2P HTTP Proxy"/>
     <port number="4505" service="SaltStack"/>
     <port number="4506" service="SaltStack"/>
