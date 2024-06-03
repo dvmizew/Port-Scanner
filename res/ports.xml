@@ -1,57 +1,148 @@
 <ports>
+    <port number="1" service="TCPMUX"/>
+    <port number="5" service="Remote Job Entry"/>
+    <port number="7" service="Echo"/>
+    <port number="9" service="Discard"/>
+    <port number="13" service="Daytime"/>
+    <port number="17" service="Quote of the Day"/>
+    <port number="18" service="Message Send Protocol"/>
+    <port number="19" service="Character Generator"/>
     <port number="20" service="FTP Data"/>
     <port number="21" service="FTP Control"/>
     <port number="22" service="SSH"/>
     <port number="23" service="Telnet"/>
     <port number="25" service="SMTP"/>
+    <port number="37" service="Time"/>
+    <port number="39" service="Resource Location Protocol"/>
+    <port number="42" service="Host Name Server"/>
+    <port number="43" service="Whois"/>
+    <port number="49" service="Login Host Protocol"/>
     <port number="53" service="DNS"/>
     <port number="67" service="DHCP Server"/>
     <port number="68" service="DHCP Client"/>
     <port number="69" service="TFTP"/>
+    <port number="70" service="Gopher"/>
+    <port number="79" service="Finger"/>
     <port number="80" service="HTTP"/>
+    <port number="88" service="Kerberos"/>
+    <port number="101" service="NIC Host Name Server"/>
+    <port number="102" service="ISO-TSAP"/>
+    <port number="107" service="Remote Telnet Service"/>
+    <port number="109" service="POP2"/>
     <port number="110" service="POP3"/>
+    <port number="115" service="SFTP"/>
+    <port number="118" service="SQL Services"/>
     <port number="119" service="NNTP"/>
     <port number="123" service="NTP"/>
     <port number="137" service="NetBIOS Name Service"/>
     <port number="138" service="NetBIOS Datagram Service"/>
     <port number="139" service="NetBIOS Session Service"/>
     <port number="143" service="IMAP"/>
+    <port number="156" service="SQL Service"/>
     <port number="161" service="SNMP"/>
     <port number="162" service="SNMP Trap"/>
     <port number="179" service="BGP"/>
     <port number="194" service="IRC"/>
+    <port number="201" service="AppleTalk Routing Maintenance"/>
+    <port number="202" service="AppleTalk Name Binding"/>
+    <port number="204" service="AppleTalk Echo"/>
+    <port number="209" service="The Quick Mail Transfer Protocol"/>
+    <port number="210" service="ANSI Z39.50"/>
+    <port number="213" service="IPX"/>
+    <port number="220" service="IMAP3"/>
+    <port number="245" service="LINK"/>
+    <port number="347" service="Fatmen Server"/>
+    <port number="363" service="RSVP Tunnel"/>
+    <port number="369" service="Rpc2portmap"/>
+    <port number="371" service="Clearcase"/>
     <port number="389" service="LDAP"/>
+    <port number="427" service="SLP (Service Location Protocol)"/>
+    <port number="434" service="Mobile IP Agent"/>
     <port number="443" service="HTTPS"/>
-    <port number="445" service="SMB"/>
+    <port number="444" service="SNPP"/>
+    <port number="445" service="Microsoft-DS"/>
+    <port number="464" service="Kerberos Change/Set password"/>
     <port number="465" service="SMTPS"/>
+    <port number="500" service="ISAKMP (VPN)"/>
+    <port number="512" service="Remote Process Execution"/>
+    <port number="513" service="Remote Login"/>
     <port number="514" service="Syslog"/>
     <port number="515" service="LPD"/>
     <port number="520" service="RIP"/>
+    <port number="521" service="RIPng"/>
+    <port number="531" service="IRC"/>
+    <port number="546" service="DHCPv6 Client"/>
+    <port number="547" service="DHCPv6 Server"/>
+    <port number="563" service="NNTP over SSL"/>
     <port number="587" service="SMTP Submission"/>
-    <port number="631" service="IPP"/>
+    <port number="610" service="npmp-local"/>
+    <port number="631" service="IPP (Printing)"/>
+    <port number="636" service="LDAP over SSL"/>
+    <port number="694" service="Ha-cluster"/>
+    <port number="749" service="Kerberos Administration"/>
+    <port number="750" service="Kerberos Version IV"/>
+    <port number="765" service="webster"/>
+    <port number="873" service="rsync"/>
+    <port number="990" service="FTP over SSL"/>
     <port number="993" service="IMAPS"/>
     <port number="995" service="POP3S"/>
+    <port number="1025" service="NFS or IIS"/>
     <port number="1080" service="SOCKS"/>
     <port number="1194" service="OpenVPN"/>
     <port number="1433" service="MSSQL"/>
     <port number="1434" service="MSSQL Monitor"/>
     <port number="1521" service="Oracle"/>
     <port number="1723" service="PPTP"/>
-    <port number="1900" service="SSDP, UPnP"/>
+    <port number="1812" service="RADIUS"/>
+    <port number="1813" service="RADIUS Accounting"/>
     <port number="2049" service="NFS"/>
+    <port number="2052" service="Unknown"/>
+    <port number="2053" service="Unknown"/>
     <port number="2082" service="cPanel"/>
     <port number="2083" service="cPanel SSL"/>
-    <port number="3128" service="Squid"/>
-    <port number="3260" service="iSCSI"/>
+    <port number="2086" service="WHM (cPanel)"/>
+    <port number="2087" service="WHM (cPanel) SSL"/>
+    <port number="2095" service="Webmail (cPanel)"/>
+    <port number="2096" service="Webmail (cPanel) SSL"/>
+    <port number="2181" service="ZooKeeper"/>
+    <port number="2222" service="DirectAdmin"/>
+    <port number="2375" service="Docker"/>
+    <port number="2376" service="Docker Secure"/>
+    <port number="3128" service="Squid Proxy"/>
     <port number="3306" service="MySQL"/>
     <port number="3389" service="RDP"/>
+    <port number="3500" service="SaltStack"/>
     <port number="3690" service="Subversion"/>
-    <port number="4369" service="Erlang Port Mapper"/>
+    <port number="4333" service="MiniDLNA"/>
+    <port number="4369" service="Erl
+ang Port Mapper"/>
+    <port number="4444" service="I2P HTTP Proxy"/>
+    <port number="4505" service="SaltStack"/>
+    <port number="4506" service="SaltStack"/>
+    <port number="5000" service="UPnP"/>
+    <port number="50000" service="Synology DSM"/>
+    <port number="50070" service="Hadoop NameNode"/>
+    <port number="51413" service="BitTorrent"/>
     <port number="5432" service="PostgreSQL"/>
+    <port number="5433" service="Apache Flink"/>
+    <port number="5555" service="Oracle WebLogic Server"/>
     <port number="5900" service="VNC"/>
     <port number="5984" service="CouchDB"/>
+    <port number="6000" service="X11"/>
     <port number="6379" service="Redis"/>
-    <port number="6667" service="IRC"/>
+    <port number="6660" service="Internet Relay Chat"/>
+    <port number="6667" service="Internet Relay Chat"/>
+    <port number="6668" service="Internet Relay Chat"/>
+    <port number="6669" service="Internet Relay Chat"/>
+    <port number="6881" service="BitTorrent DHT"/>
+    <port number="6882" service="BitTorrent DHT"/>
+    <port number="6883" service="BitTorrent DHT"/>
+    <port number="6884" service="BitTorrent DHT"/>
+    <port number="6885" service="BitTorrent DHT"/>
+    <port number="6886" service="BitTorrent DHT"/>
+    <port number="6887" service="BitTorrent DHT"/>
+    <port number="6888" service="BitTorrent DHT"/>
+    <port number="6889" service="BitTorrent DHT"/>
     <port number="8000" service="HTTP Alt"/>
     <port number="8001" service="HTTP Alt 1"/>
     <port number="8002" service="HTTP Alt 2"/>
@@ -59,14 +150,280 @@
     <port number="8086" service="InfluxDB"/>
     <port number="8443" service="HTTPS Alt"/>
     <port number="8888" service="HTTP Alt"/>
+    <port number="9000" service="UDHCP"/>
+    <port number="9042" service="Cassandra"/>
+    <port number="9092" service="Apache Kafka"/>
     <port number="9200" service="Elasticsearch"/>
+    <port number="9300" service="Elasticsearch"/>
+    <port number="9418" service="Git"/>
+    <port number="9999" service="Hydra"/>
+    <port number="10000" service="Webmin"/>
     <port number="11211" service="Memcached"/>
+    <port number="15672" service="RabbitMQ Management"/>
+    <port number="16000" service="Shiva VPN"/>
+    <port number="21800" service="GitLab Pages"/>
     <port number="27017" service="MongoDB"/>
+    <port number="28015" service="RethinkDB"/>
     <port number="32400" service="Plex Media Server"/>
+    <port number="35000" service="Syncthing"/>
     <port number="37777" service="Dahua DVR"/>
+    <port number="42000" service="Elastix"/>
     <port number="44818" service="EtherNet/IP"/>
     <port number="47808" service="BACnet"/>
-    <port number="50000" service="Synology DSM"/>
+    <port number="49152" service="Windows RPC"/>
+    <port number="49153" service="Windows RPC"/>
+    <port number="49154" service="Windows RPC"/>
+    <port number="49155" service="Windows RPC"/>
+    <port number="49156" service="Windows RPC"/>
+    <port number="49157" service="Windows RPC"/>
+    <port number="50000" service="DB2"/>
     <port number="50070" service="Hadoop NameNode"/>
-    <port number="60000" service="BitTorrent"/>
+    <port number="50075" service="Hadoop DataNode"/>
+    <port number="5044" service="Logstash"/>
+    <port number="54328" service="Couchbase"/>
+    <port number="5500" service="VNC Server"/>
+    <port number="54328" service="Couchbase"/>
+    <port number="5500" service="VNC Server"/>
+    <port number="5632" service="PCAnywhere"/>
+    <port number="5666" service="NRPE"/>
+    <port number="5672" service="RabbitMQ"/>
+    <port number="5984" service="CouchDB"/>
+    <port number="6379" service="Redis"/>
+    <port number="8086" service="InfluxDB"/>
+    <port number="8088" service="Hadoop YARN ResourceManager"/>
+    <port number="8090" service="Couchbase"/>
+    <port number="8091" service="Couchbase"/>
+    <port number="8092" service="Couchbase"/>
+    <port number="8443" service="Nifi"/>
+    <port number="9091" service="Couchbase"/>
+    <port number="9418" service="Git"/>
+    <port number="27017" service="MongoDB"/>
+    <port number="28015" service="RethinkDB"/>
+    <port number="32400" service="Plex Media Server"/>
+    <port number="40000" service="NFS"/>
+    <port number="44818" service="EtherNet/IP"/>
+    <port number="47808" service="BACnet"/>
+    <port number="49152" service="Windows RPC"/>
+    <port number="49153" service="Windows RPC"/>
+    <port number="49154" service="Windows RPC"/>
+    <port number="49155" service="Windows RPC"/>
+    <port number="49156" service="Windows RPC"/>
+    <port number="49157" service="Windows RPC"/>
+    <port number="50000" service="DB2"/>
+    <port number="50070" service="Hadoop NameNode"/>
+    <port number="50075" service="Hadoop DataNode"/>
+    <port number="5044" service="Logstash"/>
+    <port number="54328" service="Couchbase"/>
+    <port number="5500" service="VNC Server"/>
+    <port number="5632" service="PCAnywhere"/>
+    <port number="5666" service="NRPE"/>
+    <port number="5672" service="RabbitMQ"/>
+    <port number="5683" service="CoAP"/>
+    <port number="6379" service="Redis"/>
+    <port number="8086" service="InfluxDB"/>
+    <port number="8088" service="Hadoop YARN ResourceManager"/>
+    <port number="8090" service="Couchbase"/>
+    <port number="8091" service="Couchbase"/>
+    <port number="8092" service="Couchbase"/>
+    <port number="8443" service="Nifi"/>
+    <port number="9091" service="Couchbase"/>
+    <port number="9418" service="Git"/>
+    <port number="27017" service="MongoDB"/>
+    <port number="28015" service="RethinkDB"/>
+    <port number="32400" service="Plex Media Server"/>
+    <port number="40000" service="NFS"/>
+    <port number="44818" service="EtherNet/IP"/>
+    <port number="47808" service="BACnet"/>
+    <port number="49152" service="Windows RPC"/>
+    <port number="49153" service="Windows RPC"/>
+    <port number="49154" service="Windows RPC"/>
+    <port number="49155" service="Windows RPC"/>
+    <port number="49156" service="Windows RPC"/>
+    <port number="49157" service="Windows RPC"/>
+    <port number="50000" service="DB2"/>
+    <port number="50070" service="Hadoop NameNode"/>
+    <port number="50075" service="Hadoop DataNode"/>
+    <port number="5044" service="Logstash"/>
+    <port number="54328" service="Couchbase"/>
+    <port number="5500" service="VNC Server"/>
+    <port number="5632" service="PCAnywhere"/>
+    <port number="5666" service="NRPE"/>
+    <port number="5672" service="RabbitMQ"/>
+    <port number="5683" service="CoAP"/>
+    <port number="6379" service="Redis"/>
+    <port number="8086" service="InfluxDB"/>
+    <port number="8088" service="Hadoop YARN ResourceManager"/>
+    <port number="8090" service="Couchbase"/>
+    <port number="8091" service="Couchbase"/>
+    <port number="8092" service="Couchbase"/>
+    <port number="8443" service="Nifi"/>
+    <port number="9091" service="Couchbase"/>
+    <port number="9418" service="Git"/>
+    <port number="27017" service="MongoDB"/>
+    <port number="28015" service="RethinkDB"/>
+    <port number="32400" service="Plex Media Server"/>
+    <port number="40000" service="NFS"/>
+    <port number="44818" service="EtherNet/IP"/>
+    <port number="47808" service="BACnet"/>
+    <port number="49152" service="Windows RPC"/>
+    <port number="49153" service="Windows RPC"/>
+    <port number="49154" service="Windows RPC"/>
+    <port number="49155" service="Windows RPC"/>
+    <port number="49156" service="Windows RPC"/>
+    <port number="49157" service="Windows RPC"/>
+    <port number="50000" service="DB2"/>
+    <port number="50070" service="Hadoop NameNode"/>
+    <port number="50075" service="Hadoop DataNode"/>
+    <port number="5044" service="Logstash"/>
+    <port number="54328" service="Couchbase"/>
+    <port number="5500" service="VNC Server"/>
+    <port number="5632" service="PCAnywhere"/>
+    <port number="5666" service="NRPE"/>
+    <port number="5672" service="RabbitMQ"/>
+    <port number="5683" service="CoAP"/>
+    <port number="6379" service="Redis"/>
+    <port number="8086" service="InfluxDB"/>
+    <port number="8088" service="Hadoop YARN ResourceManager"/>
+    <port number="8090" service="Couchbase"/>
+    <port number="8091" service="Couchbase"/>
+    <port number="8092" service="Couchbase"/>
+    <port number="8443" service="Nifi"/>
+    <port number="9091" service="Couchbase"/>
+    <port number="9418" service="Git"/>
+    <port number="27017" service="MongoDB"/>
+    <port number="28015" service="RethinkDB"/>
+    <port number="32400" service="Plex Media Server"/>
+    <port number="40000" service="NFS"/>
+    <port number="44818" service="EtherNet/IP"/>
+    <port number="47808" service="BACnet"/>
+    <port number="49152" service="Windows RPC"/>
+    <port number="49153" service="Windows RPC"/>
+    <port number="49154" service="Windows RPC"/>
+    <port number="49155" service="Windows RPC"/>
+    <port number="49156" service="Windows RPC"/>
+    <port number="49157" service="Windows RPC"/>
+    <port number="50000" service="DB2"/>
+    <port number="50070" service="Hadoop NameNode"/>
+    <port number="50075" service="Hadoop DataNode"/>
+    <port number="5044" service="Logstash"/>
+    <port number="54328" service="Couchbase"/>
+    <port number="5500" service="VNC Server"/>
+    <port number="5632" service="PCAnywhere"/>
+    <port number="5666" service="NRPE"/>
+    <port number="5672" service="RabbitMQ"/>
+    <port number="5683" service="CoAP"/>
+    <port number="6379" service="Redis"/>
+    <port number="8086" service="InfluxDB"/>
+    <port number="8088" service="Hadoop YARN ResourceManager"/>
+    <port number="8090" service="Couchbase"/>
+    <port number="8091" service="Couchbase"/>
+    <port number="8092" service="Couchbase"/>
+    <port number="8443" service="Nifi"/>
+    <port number="9091" service="Couchbase"/>
+    <port number="9418" service="Git"/>
+    <port number="27017" service="MongoDB"/>
+    <port number="28015" service="RethinkDB"/>
+    <port number="32400" service="Plex Media Server"/>
+    <port number="40000" service="NFS"/>
+    <port number="44818" service="EtherNet/IP"/>
+    <port number="47808" service="BACnet"/>
+    <port number="49152" service="Windows RPC"/>
+    <port number="49153" service="Windows RPC"/>
+    <port number="49154" service="Windows RPC"/>
+    <port number="49155" service="Windows RPC"/>
+    <port number="49156" service="Windows RPC"/>
+    <port number="49157" service="Windows RPC"/>
+    <port number="50000" service="DB2"/>
+    <port number="50070" service="Hadoop NameNode"/>
+    <port number="50075" service="Hadoop DataNode"/>
+    <port number="5044" service="Logstash"/>
+    <port number="54328" service="Couchbase"/>
+    <port number="5500" service="VNC Server"/>
+    <port number="5632" service="PCAnywhere"/>
+    <port number="5666" service="NRPE"/>
+    <port number="5672" service="RabbitMQ"/>
+    <port number="5683" service="CoAP"/>
+    <port number="6379" service="Redis"/>
+    <port number="8086" service="InfluxDB"/>
+    <port number="8088" service="Hadoop YARN ResourceManager"/>
+    <port number="8090" service="Couchbase"/>
+    <port number="8091" service="Couchbase"/>
+    <port number="8092" service="Couchbase"/>
+    <port number="8443" service="Nifi"/>
+    <port number="9091" service="Couchbase"/>
+    <port number="9418" service="Git"/>
+    <port number="27017" service="MongoDB"/>
+    <port number="28015" service="RethinkDB"/>
+    <port number="32400" service="Plex Media Server"/>
+    <port number="40000" service="NFS"/>
+    <port number="44818" service="EtherNet/IP"/>
+    <port number="47808" service="BACnet"/>
+    <port number="49152" service="Windows RPC"/>
+    <port number="49153" service="Windows RPC"/>
+    <port number="49154" service="Windows RPC"/>
+    <port number="49155" service="Windows RPC"/>
+    <port number="49156" service="Windows RPC"/>
+    <port number="49157" service="Windows RPC"/>
+    <port number="50000" service="DB2"/>
+    <port number="50070" service="Hadoop NameNode"/>
+    <port number="50075" service="Hadoop DataNode"/>
+    <port number="5044" service="Logstash"/>
+    <port number="54328" service="Couchbase"/>
+    <port number="5500" service="VNC Server"/>
+    <port number="5632" service="PCAnywhere"/>
+    <port number="5666" service="NRPE"/>
+    <port number="5672" service="RabbitMQ"/>
+    <port number="5683" service="CoAP"/>
+    <port number="6379" service="Redis"/>
+    <port number="8086" service="InfluxDB"/>
+    <port number="8088" service="Hadoop YARN ResourceManager"/>
+    <port number="8090" service="Couchbase"/>
+    <port number="8091" service="Couchbase"/>
+    <port number="8092" service="Couchbase"/>
+    <port number="8443" service="Nifi"/>
+    <port number="9091" service="Couchbase"/>
+    <port number="9418" service="Git"/>
+    <port number="27017" service="MongoDB"/>
+    <port number="28015" service="RethinkDB"/>
+    <port number="32400" service="Plex Media Server"/>
+    <port number="40000" service="NFS"/>
+    <port number="44818" service="EtherNet/IP"/>
+    <port number="47808" service="BACnet"/>
+    <port number="49152" service="Windows RPC"/>
+    <port number="49153" service="Windows RPC"/>
+    <port number="49154" service="Windows RPC"/>
+    <port number="49155" service="Windows RPC"/>
+    <port number="49156" service="Windows RPC"/>
+    <port number="49157" service="Windows RPC"/>
+    <port number="50000" service="DB2"/>
+    <port number="50070" service="Hadoop NameNode"/>
+    <port number="50075" service="Hadoop DataNode"/>
+    <port number="5044" service="Logstash"/>
+    <port number="54328" service="Couchbase"/>
+    <port number="5500" service="VNC Server"/>
+    <port number="5632" service="PCAnywhere"/>
+    <port number="5666" service="NRPE"/>
+    <port number="5672" service="RabbitMQ"/>
+    <port number="5683" service="CoAP"/>
+    <port number="6379" service="Redis"/>
+    <port number="8086" service="InfluxDB"/>
+    <port number="8088" service="Hadoop YARN ResourceManager"/>
+    <port number="8090" service="Couchbase"/>
+    <port number="8091" service="Couchbase"/>
+    <port number="8092" service="Couchbase"/>
+    <port number="8443" service="Nifi"/>
+    <port number="9091" service="Couchbase"/>
+    <port number="9418" service="Git"/>
+    <port number="27017" service="MongoDB"/>
+    <port number="28015" service="RethinkDB"/>
+    <port number="32400" service="Plex Media Server"/>
+    <port number="40000" service="NFS"/>
+    <port number="44818" service="EtherNet/IP"/>
+    <port number="47808" service="BACnet"/>
+    <port number="49152" service="Windows RPC"/>
+    <port number="49153" service="Windows RPC"/>
+    <port number="49154" service="Windows RPC"/>
+    <port number="49155" service="Windows RPC"/>
+    <port number="49156" service="Windows RPC"/>
+    <port number="49157" service="Windows RPC"/>
 </ports>
