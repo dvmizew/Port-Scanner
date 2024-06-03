@@ -10,7 +10,6 @@ public class NetworkScannerGUI extends JFrame {
     private final JTextArea resultTextArea;
     private final JButton scanButton;
     private final JButton cancelButton;
-    private final JButton reportButton;
     private final JTextField targetField;
     private final JTextField startPortField;
     private final JTextField endPortField;
@@ -28,9 +27,9 @@ public class NetworkScannerGUI extends JFrame {
 
         scanButton = new JButton("Scan Network");
         cancelButton = new JButton("Cancel");
-        reportButton = new JButton("Generate Report");
+        JButton reportButton = new JButton("Generate Report");
 
-        targetField = new JTextField("192.168.0.1", 20);
+        targetField = new JTextField("192.168.1.1", 20);
         startPortField = new JTextField("1", 5);
         endPortField = new JTextField("65535", 5);
         progressBar = new JProgressBar(0, 100);
@@ -106,6 +105,12 @@ public class NetworkScannerGUI extends JFrame {
                     System.out.println("Scan complete");
                 }
             };
+
+            currentWorker.addPropertyChangeListener(evt -> {
+                if ("progress".equals(evt.getPropertyName())) {
+                    progressBar.setValue((Integer) evt.getNewValue());
+                }
+            });
 
             currentWorker.execute();
         }
