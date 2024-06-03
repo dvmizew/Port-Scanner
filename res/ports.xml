@@ -1,0 +1,72 @@
+<ports>
+    <port number="20" service="FTP Data"/>
+    <port number="21" service="FTP Control"/>
+    <port number="22" service="SSH"/>
+    <port number="23" service="Telnet"/>
+    <port number="25" service="SMTP"/>
+    <port number="53" service="DNS"/>
+    <port number="67" service="DHCP Server"/>
+    <port number="68" service="DHCP Client"/>
+    <port number="69" service="TFTP"/>
+    <port number="80" service="HTTP"/>
+    <port number="110" service="POP3"/>
+    <port number="119" service="NNTP"/>
+    <port number="123" service="NTP"/>
+    <port number="137" service="NetBIOS Name Service"/>
+    <port number="138" service="NetBIOS Datagram Service"/>
+    <port number="139" service="NetBIOS Session Service"/>
+    <port number="143" service="IMAP"/>
+    <port number="161" service="SNMP"/>
+    <port number="162" service="SNMP Trap"/>
+    <port number="179" service="BGP"/>
+    <port number="194" service="IRC"/>
+    <port number="389" service="LDAP"/>
+    <port number="443" service="HTTPS"/>
+    <port number="445" service="SMB"/>
+    <port number="465" service="SMTPS"/>
+    <port number="514" service="Syslog"/>
+    <port number="515" service="LPD"/>
+    <port number="520" service="RIP"/>
+    <port number="587" service="SMTP Submission"/>
+    <port number="631" service="IPP"/>
+    <port number="993" service="IMAPS"/>
+    <port number="995" service="POP3S"/>
+    <port number="1080" service="SOCKS"/>
+    <port number="1194" service="OpenVPN"/>
+    <port number="1433" service="MSSQL"/>
+    <port number="1434" service="MSSQL Monitor"/>
+    <port number="1521" service="Oracle"/>
+    <port number="1723" service="PPTP"/>
+    <port number="1900" service="SSDP, UPnP"/>
+    <port number="2049" service="NFS"/>
+    <port number="2082" service="cPanel"/>
+    <port number="2083" service="cPanel SSL"/>
+    <port number="3128" service="Squid"/>
+    <port number="3260" service="iSCSI"/>
+    <port number="3306" service="MySQL"/>
+    <port number="3389" service="RDP"/>
+    <port number="3690" service="Subversion"/>
+    <port number="4369" service="Erlang Port Mapper"/>
+    <port number="5432" service="PostgreSQL"/>
+    <port number="5900" service="VNC"/>
+    <port number="5984" service="CouchDB"/>
+    <port number="6379" service="Redis"/>
+    <port number="6667" service="IRC"/>
+    <port number="8000" service="HTTP Alt"/>
+    <port number="8001" service="HTTP Alt 1"/>
+    <port number="8002" service="HTTP Alt 2"/>
+    <port number="8080" service="HTTP Proxy"/>
+    <port number="8086" service="InfluxDB"/>
+    <port number="8443" service="HTTPS Alt"/>
+    <port number="8888" service="HTTP Alt"/>
+    <port number="9200" service="Elasticsearch"/>
+    <port number="11211" service="Memcached"/>
+    <port number="27017" service="MongoDB"/>
+    <port number="32400" service="Plex Media Server"/>
+    <port number="37777" service="Dahua DVR"/>
+    <port number="44818" service="EtherNet/IP"/>
+    <port number="47808" service="BACnet"/>
+    <port number="50000" service="Synology DSM"/>
+    <port number="50070" service="Hadoop NameNode"/>
+    <port number="60000" service="BitTorrent"/>
+</ports>
